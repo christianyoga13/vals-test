@@ -1,0 +1,201 @@
+<svg width="320" height="450" viewBox="0 0 320 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for flowers -->
+    <radialGradient id="redRose" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#ff4d6f"/>
+      <stop offset="50%" stop-color="#e91e63"/>
+      <stop offset="100%" stop-color="#c2185b"/>
+    </radialGradient>
+    
+    <radialGradient id="pinkRose" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#ff80ab"/>
+      <stop offset="50%" stop-color="#ff4081"/>
+      <stop offset="100%" stop-color="#f50057"/>
+    </radialGradient>
+    
+    <radialGradient id="peachRose" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#ffccbc"/>
+      <stop offset="50%" stop-color="#ff8a65"/>
+      <stop offset="100%" stop-color="#ff6f00"/>
+    </radialGradient>
+    
+    <radialGradient id="coralRose" cx="30%" cy="30%">
+      <stop offset="0%" stop-color="#ff91a4"/>
+      <stop offset="50%" stop-color="#ff6090"/>
+      <stop offset="100%" stop-color="#ec407a"/>
+    </radialGradient>
+    
+    <linearGradient id="stem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4caf50"/>
+      <stop offset="100%" stop-color="#2e7d32"/>
+    </linearGradient>
+    
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66bb6a"/>
+      <stop offset="100%" stop-color="#43a047"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background glow -->
+  <ellipse cx="160" cy="150" rx="140" ry="120" fill="url(#pinkRose)" opacity="0.1"/>
+  
+  <!-- Stems -->
+  <path d="M 145 200 Q 143 290 140 420" stroke="url(#stem)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 160 200 Q 162 290 165 420" stroke="url(#stem)" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 175 200 Q 177 290 180 420" stroke="url(#stem)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 130 210 Q 128 300 125 420" stroke="url(#stem)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M 190 210 Q 192 300 195 420" stroke="url(#stem)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Leaves - more organic -->
+  <g opacity="0.9">
+    <ellipse cx="115" cy="310" rx="18" ry="28" fill="url(#leaf)" transform="rotate(-35 115 310)"/>
+    <path d="M 115 285 Q 115 310 115 335" stroke="#2e7d32" stroke-width="1.5" fill="none"/>
+    
+    <ellipse cx="205" cy="320" rx="18" ry="28" fill="url(#leaf)" transform="rotate(35 205 320)"/>
+    <path d="M 205 295 Q 205 320 205 345" stroke="#2e7d32" stroke-width="1.5" fill="none"/>
+    
+    <ellipse cx="130" cy="270" rx="15" ry="24" fill="url(#leaf)" transform="rotate(-25 130 270)"/>
+    <path d="M 130 250 Q 130 270 130 290" stroke="#2e7d32" stroke-width="1.5" fill="none"/>
+    
+    <ellipse cx="190" cy="280" rx="15" ry="24" fill="url(#leaf)" transform="rotate(25 190 280)"/>
+    <path d="M 190 260 Q 190 280 190 300" stroke="#2e7d32" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Ribbon/Bow -->
+  <g>
+    <path d="M 110 380 Q 160 375 210 380" stroke="#ff69b4" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M 110 386 Q 160 381 210 386" stroke="#ff85c7" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- Left bow -->
+    <ellipse cx="85" cy="380" rx="25" ry="15" fill="#ff1493" transform="rotate(-25 85 380)"/>
+    <ellipse cx="80" cy="380" rx="22" ry="13" fill="#ff69b4" transform="rotate(-25 80 380)"/>
+    <!-- Right bow -->
+    <ellipse cx="235" cy="380" rx="25" ry="15" fill="#ff1493" transform="rotate(25 235 380)"/>
+    <ellipse cx="240" cy="380" rx="22" ry="13" fill="#ff69b4" transform="rotate(25 240 380)"/>
+    <!-- Center knot -->
+    <circle cx="160" cy="383" r="10" fill="#c2185b"/>
+    <circle cx="160" cy="383" r="7" fill="#ff1493"/>
+  </g>
+  
+  <!-- ROSES - detailed petals -->
+  
+  <!-- Center Rose (Deep Red) - largest -->
+  <g id="centerRose">
+    <!-- Outer petals -->
+    <ellipse cx="135" cy="105" rx="22" ry="28" fill="url(#redRose)" opacity="0.85" transform="rotate(-35 135 105)"/>
+    <ellipse cx="185" cy="105" rx="22" ry="28" fill="url(#redRose)" opacity="0.85" transform="rotate(35 185 105)"/>
+    <ellipse cx="160" cy="85" rx="24" ry="30" fill="url(#redRose)" opacity="0.85" transform="rotate(0 160 85)"/>
+    <ellipse cx="138" cy="130" rx="22" ry="28" fill="url(#redRose)" opacity="0.85" transform="rotate(-60 138 130)"/>
+    <ellipse cx="182" cy="130" rx="22" ry="28" fill="url(#redRose)" opacity="0.85" transform="rotate(60 182 130)"/>
+    
+    <!-- Mid petals -->
+    <ellipse cx="145" cy="108" rx="16" ry="22" fill="#ff4d6f" opacity="0.9" transform="rotate(-25 145 108)"/>
+    <ellipse cx="175" cy="108" rx="16" ry="22" fill="#ff4d6f" opacity="0.9" transform="rotate(25 175 108)"/>
+    <ellipse cx="160" cy="95" rx="18" ry="24" fill="#ff4d6f" opacity="0.9"/>
+    <ellipse cx="148" cy="120" rx="16" ry="20" fill="#ff4d6f" opacity="0.9" transform="rotate(-45 148 120)"/>
+    <ellipse cx="172" cy="120" rx="16" ry="20" fill="#ff4d6f" opacity="0.9" transform="rotate(45 172 120)"/>
+    
+    <!-- Inner petals & center -->
+    <circle cx="160" cy="110" r="18" fill="#e91e63"/>
+    <ellipse cx="155" cy="107" rx="8" ry="12" fill="#ff1744" transform="rotate(-20 155 107)"/>
+    <ellipse cx="165" cy="107" rx="8" ry="12" fill="#ff1744" transform="rotate(20 165 107)"/>
+    <circle cx="160" cy="110" r="8" fill="#b71c1c"/>
+    <ellipse cx="158" cy="108" rx="4" ry="5" fill="#c62828" opacity="0.8"/>
+  </g>
+  
+  <!-- Left Rose (Hot Pink) -->
+  <g id="leftRose">
+    <ellipse cx="85" cy="140" rx="18" ry="24" fill="url(#pinkRose)" opacity="0.85" transform="rotate(-30 85 140)"/>
+    <ellipse cx="125" cy="140" rx="18" ry="24" fill="url(#pinkRose)" opacity="0.85" transform="rotate(30 125 140)"/>
+    <ellipse cx="105" cy="125" rx="19" ry="25" fill="url(#pinkRose)" opacity="0.85"/>
+    <ellipse cx="90" cy="155" rx="18" ry="23" fill="url(#pinkRose)" opacity="0.85" transform="rotate(-50 90 155)"/>
+    <ellipse cx="120" cy="155" rx="18" ry="23" fill="url(#pinkRose)" opacity="0.85" transform="rotate(50 120 155)"/>
+    
+    <ellipse cx="95" cy="142" rx="13" ry="18" fill="#ff80ab" opacity="0.9" transform="rotate(-20 95 142)"/>
+    <ellipse cx="115" cy="142" rx="13" ry="18" fill="#ff80ab" opacity="0.9" transform="rotate(20 115 142)"/>
+    <circle cx="105" cy="143" r="14" fill="#f50057"/>
+    <circle cx="105" cy="143" r="7" fill="#c51162"/>
+    <ellipse cx="103" cy="141" rx="3" ry="4" fill="#ff4081"/>
+  </g>
+  
+  <!-- Right Rose (Coral) -->
+  <g id="rightRose">
+    <ellipse cx="195" cy="140" rx="18" ry="24" fill="url(#coralRose)" opacity="0.85" transform="rotate(-30 195 140)"/>
+    <ellipse cx="235" cy="140" rx="18" ry="24" fill="url(#coralRose)" opacity="0.85" transform="rotate(30 235 140)"/>
+    <ellipse cx="215" cy="125" rx="19" ry="25" fill="url(#coralRose)" opacity="0.85"/>
+    <ellipse cx="200" cy="155" rx="18" ry="23" fill="url(#coralRose)" opacity="0.85" transform="rotate(-50 200 155)"/>
+    <ellipse cx="230" cy="155" rx="18" ry="23" fill="url(#coralRose)" opacity="0.85" transform="rotate(50 230 155)"/>
+    
+    <ellipse cx="205" cy="142" rx="13" ry="18" fill="#ff91a4" opacity="0.9" transform="rotate(-20 205 142)"/>
+    <ellipse cx="225" cy="142" rx="13" ry="18" fill="#ff91a4" opacity="0.9" transform="rotate(20 225 142)"/>
+    <circle cx="215" cy="143" r="14" fill="#ec407a"/>
+    <circle cx="215" cy="143" r="7" fill="#d81b60"/>
+    <ellipse cx="213" cy="141" rx="3" ry="4" fill="#ff6090"/>
+  </g>
+  
+  <!-- Top Left Rose (Peach) - smaller -->
+  <g id="topLeftRose">
+    <ellipse cx="110" cy="75" rx="14" ry="19" fill="url(#peachRose)" opacity="0.85" transform="rotate(-25 110 75)"/>
+    <ellipse cx="140" cy="75" rx="14" ry="19" fill="url(#peachRose)" opacity="0.85" transform="rotate(25 140 75)"/>
+    <ellipse cx="125" cy="63" rx="15" ry="20" fill="url(#peachRose)" opacity="0.85"/>
+    <ellipse cx="115" cy="87" rx="14" ry="18" fill="url(#peachRose)" opacity="0.85" transform="rotate(-45 115 87)"/>
+    <ellipse cx="135" cy="87" rx="14" ry="18" fill="url(#peachRose)" opacity="0.85" transform="rotate(45 135 87)"/>
+    
+    <circle cx="125" cy="76" r="12" fill="#ff8a65"/>
+    <ellipse cx="121" cy="74" rx="6" ry="8" fill="#ffccbc" transform="rotate(-15 121 74)"/>
+    <ellipse cx="129" cy="74" rx="6" ry="8" fill="#ffccbc" transform="rotate(15 129 74)"/>
+    <circle cx="125" cy="76" r="5" fill="#ff6f00"/>
+  </g>
+  
+  <!-- Top Right Rose (Pink) - smaller -->
+  <g id="topRightRose">
+    <ellipse cx="180" cy="75" rx="14" ry="19" fill="url(#pinkRose)" opacity="0.85" transform="rotate(-25 180 75)"/>
+    <ellipse cx="210" cy="75" rx="14" ry="19" fill="url(#pinkRose)" opacity="0.85" transform="rotate(25 210 75)"/>
+    <ellipse cx="195" cy="63" rx="15" ry="20" fill="url(#pinkRose)" opacity="0.85"/>
+    <ellipse cx="185" cy="87" rx="14" ry="18" fill="url(#pinkRose)" opacity="0.85" transform="rotate(-45 185 87)"/>
+    <ellipse cx="205" cy="87" rx="14" ry="18" fill="url(#pinkRose)" opacity="0.85" transform="rotate(45 205 87)"/>
+    
+    <circle cx="195" cy="76" r="12" fill="#ff4081"/>
+    <ellipse cx="191" cy="74" rx="6" ry="8" fill="#ff80ab" transform="rotate(-15 191 74)"/>
+    <ellipse cx="199" cy="74" rx="6" ry="8" fill="#ff80ab" transform="rotate(15 199 74)"/>
+    <circle cx="195" cy="76" r="5" fill="#f50057"/>
+  </g>
+  
+  <!-- Small buds -->
+  <g id="buds">
+    <ellipse cx="75" cy="180" rx="11" ry="17" fill="#ff4081" opacity="0.9"/>
+    <ellipse cx="75" cy="180" rx="7" ry="13" fill="#ff1744"/>
+    <path d="M 72 188 Q 75 175 78 188" fill="#c2185b"/>
+    
+    <ellipse cx="245" cy="180" rx="11" ry="17" fill="#ff6090" opacity="0.9"/>
+    <ellipse cx="245" cy="180" rx="7" ry="13" fill="#ec407a"/>
+    <path d="M 242 188 Q 245 175 248 188" fill="#d81b60"/>
+  </g>
+  
+  <!-- Baby's breath - small accent flowers -->
+  <g fill="#fff" opacity="0.95">
+    <circle cx="70" cy="130" r="5"/>
+    <circle cx="65" cy="120" r="4"/>
+    <circle cx="75" cy="115" r="3.5"/>
+    <circle cx="250" cy="130" r="5"/>
+    <circle cx="255" cy="120" r="4"/>
+    <circle cx="245" cy="115" r="3.5"/>
+    <circle cx="145" cy="45" r="4"/>
+    <circle cx="175" cy="45" r="4"/>
+    <circle cx="160" cy="40" r="3"/>
+  </g>
+  
+  <!-- Sparkle effects -->
+  <g opacity="0.8">
+    <circle cx="60" cy="100" r="2" fill="#ffeb3b"/>
+    <path d="M 60 95 L 62 100 L 60 105 L 58 100 Z" fill="#ffd700"/>
+    
+    <circle cx="260" cy="100" r="2" fill="#ffeb3b"/>
+    <path d="M 260 95 L 262 100 L 260 105 L 258 100 Z" fill="#ffd700"/>
+    
+    <circle cx="160" cy="30" r="2.5" fill="#ffeb3b"/>
+    <path d="M 160 24 L 162.5 30 L 160 36 L 157.5 30 Z" fill="#ffd700"/>
+    
+    <circle cx="95" cy="65" r="1.8" fill="#ffeb3b"/>
+    <circle cx="225" cy="65" r="1.8" fill="#ffeb3b"/>
+  </g>
+</svg>
