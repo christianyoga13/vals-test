@@ -349,7 +349,7 @@ export default function Home() {
   const [envelopeHiding, setEnvelopeHiding] = useState(false);
   const isTransitioning = useRef(false);
   const touchStartY = useRef(0);
-  const totalSlides = 5;
+  const totalSlides = 6;
 
   const goToSlide = useCallback((index, dir) => {
     if (isTransitioning.current || index === currentSlide || index < 0 || index >= totalSlides) return;
@@ -702,6 +702,36 @@ export default function Home() {
             </h2>
             <p className="closing-sub">Happy Valentine&apos;s Day, dari seseorang yang diam-diam seneng kenal kamu</p>
             <span className="closing-heart">❤️</span>
+          </div>
+        </div>
+
+        {/* ── Slide 5: Bonus ── */}
+        <div className={getSlideClass(5) + " bonus-slide"}>
+          <div className="bonus-confetti">
+            {Array.from({ length: 30 }).map((_, i) => (
+              <div key={i} className="confetti-piece" style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 3}s`,
+                animationDuration: `${2 + Math.random() * 3}s`,
+                backgroundColor: ['#f43f5e','#fb7185','#fda4af','#d4a574','#f0d9b5','#ff6b6b','#ffd93d','#6bcb77','#4d96ff'][i % 9],
+                transform: `rotate(${Math.random() * 360}deg)`,
+              }} />
+            ))}
+          </div>
+          <div className="slide-content bonus-content">
+            <div className="bonus-badge">🎉 BONUS 🎉</div>
+            <h2 className="bonus-title">Wkwkwk kamu masih scroll?? 😏</h2>
+            <p className="bonus-text">Berarti kamu emang penasaran ya</p>
+            <div className="bonus-photo-wrapper">
+              <img src="/photos/angel.jpeg" alt="Angel" className="bonus-photo" />
+            </div>
+            <div className="bonus-emoji-row">
+              <span className="bonus-emoji bounce-1">😜</span>
+              <span className="bonus-emoji bounce-2">🤭</span>
+              <span className="bonus-emoji bounce-3">😆</span>
+            </div>
+            <p className="bonus-secret">Psst... ini slide rahasia loh, cuma kamu yang tau 🤫</p>
+            <div className="bonus-wink">😉✨</div>
           </div>
         </div>
       </div>
